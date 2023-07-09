@@ -36,7 +36,7 @@ public class UserEndpoints {
                   pathParam("username", username).
                   body(payload).
            when().
-                  post(Routes.UPDATE_URL);
+                  put(Routes.UPDATE_URL);
     return response;
     }
 
