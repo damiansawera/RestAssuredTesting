@@ -1,18 +1,16 @@
 package Test;
 
-import Endpoints.UserEndpoints;
+import Endpoints.UserService;
 import POJOclasses.User;
 import com.github.javafaker.Faker;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.ResponseSpecification;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.expect;
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.equalTo;
 
 public class UserTests{
 
@@ -39,14 +37,15 @@ public class UserTests{
 
     @Test(priority = 1)
     public void testPostUser() {
-       Response response = UserEndpoints.createUser(payload);
+       Response response = UserService.createUser(payload);
+        System.out.println(payload.getUsername() +"\n"+ payload.getPassword());
        response.
                then().spec(responseSpec);
     }
 
     @Test(priority = 2)
     public void testGetUser() {
-        Response response = UserEndpoints.getUser(this.payload.getUsername());
+        Response response = UserService.getUser(this.payload.getUsername());
         response.
                 then().spec(responseSpec);
     }
@@ -57,14 +56,20 @@ public class UserTests{
         payload.setLastName(faker.name().lastName());
         payload.setFirstName(faker.name().firstName());
 
-        Response response = UserEndpoints.updateUser(this.payload.getUsername(), payload);
+        Response response = UserService.updateUser(this.payload.getUsername(), payload);
         response.
                 then().spec(responseSpec);
     }
 
     @Test(priority = 4)
     public void testDeleteUser() {
-        Response response = UserEndpoints.deleteUser(this.payload.getUsername());
+        Response response = UserService.deleteUser(this.payload.getUsername());
+        response.
+                then().spec(responseSpec);
+    }
+    @Test(priority = 5)
+    public void testLoginUser() {
+        Response response = UserService.loginUser(this.payload.getUsername(), this.payload.getPassword());
         response.
                 then().spec(responseSpec);
     }

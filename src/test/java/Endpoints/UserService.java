@@ -7,7 +7,7 @@ import io.restassured.specification.RequestSpecification;
 
 import static io.restassured.RestAssured.given;
 
-public class UserEndpoints {
+public class UserService {
 
     public static RequestSpecification requestSpec = given()
             .baseUri(Routes.BASE_URI)
@@ -19,7 +19,7 @@ public class UserEndpoints {
                     spec(requestSpec).
                     body(payload).
             when().
-                    post(Routes.POST_ENDPOINT);
+                    post(Routes.POST_USER_ENDPOINT);
     return response;
     }
 
@@ -29,7 +29,7 @@ public class UserEndpoints {
                    spec(requestSpec).
                    pathParam("username", username).
            when().
-                  get(Routes.GET_ENDPOINT);
+                  get(Routes.GET_USER_ENDPOINT);
     return response;
     }
 
@@ -40,7 +40,7 @@ public class UserEndpoints {
                   pathParam("username", username).
                   body(payload).
            when().
-                  put(Routes.UPDATE_ENDPOINT);
+                  put(Routes.UPDATE_USER_ENDPOINT);
     return response;
     }
 
@@ -50,7 +50,17 @@ public class UserEndpoints {
                    spec(requestSpec).
                    pathParam("username", username).
                    when().
-                   delete(Routes.DELETE_ENDPOINT);
+                   delete(Routes.DELETE_USER_ENDPOINT);
     return response;
+    }
+    public static Response loginUser(String username, String password){
+        Response response =
+                given().
+                        spec(requestSpec).
+                        queryParam("username", username).
+                        queryParam("password", password).
+                when().
+                        get(Routes.LOGIN_USER_ENDPOINT);
+        return response;
     }
 }
