@@ -15,12 +15,15 @@ public class Pet {
     private List<Tag> tags;
     private String status;
 
-    private class Category {
+    @Getter
+    @Setter
+    private static class Category {
         private int id;
         private String name;
     }
-
-    private class Tag {
+    @Getter
+    @Setter
+    private static class Tag {
         private int id;
         private String name;
     }

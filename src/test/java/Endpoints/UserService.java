@@ -13,11 +13,11 @@ public class UserService {
             .baseUri(Routes.BASE_URI)
             .contentType(ContentType.JSON);
 
-    public static Response createUser(User payload){
+    public static Response createUser(User userPayload){
     Response response =
             given().
                     spec(requestSpec).
-                    body(payload).
+                    body(userPayload).
             when().
                     post(Routes.POST_USER_ENDPOINT);
     return response;
