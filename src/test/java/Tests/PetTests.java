@@ -1,4 +1,4 @@
-package Test;
+package Tests;
 
 import Endpoints.PetService;
 import POJOclasses.Pet;
