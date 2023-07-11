@@ -20,5 +20,34 @@ public class PetService {
                 when().post(Routes.POST_PET_ENDPOINT);
         return response;
     }
+    public static Response getPet(long petId){
+        Response response =
+                given().
+                        spec(requestSpec).
+                        pathParam("petId", petId).
+                when().
+                        get(Routes.GET_PET_ENDPOINT);
+        return response;
+    }
 
+    public static Response updatePet(long id, Pet petPayload) {
+        Response response =
+                given().
+                        spec(requestSpec).
+                        queryParam("id", id).
+                        body(petPayload).
+                when().
+                        put(Routes.PUT_PET_ENDPOINT);
+        return response;
+    }
+
+    public static Response deletePet(long id) {
+        Response response =
+                given().
+                        spec(requestSpec).
+                        pathParam("petId", id).
+                when().
+                        delete(Routes.DELETE_PET_ENDPOINT);
+        return response;
+    }
 }

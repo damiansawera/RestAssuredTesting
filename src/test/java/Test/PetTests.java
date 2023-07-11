@@ -26,10 +26,10 @@ public class PetTests {
     faker = new Faker();
     petPayload = new Pet();
     Pet.Category category = new Pet.Category();
-    category.setId(faker.idNumber().hashCode());
+    category.setId(faker.number().numberBetween(1, 99999));
     category.setName(faker.name().name());
     Pet.Tag tag = new Pet.Tag();
-    tag.setId(faker.idNumber().hashCode());
+    tag.setId(faker.number().numberBetween(1, 99999));
     tag.setName(faker.name().name());
 
     petPayload.setId(faker.idNumber().hashCode());
@@ -40,13 +40,35 @@ public class PetTests {
     petPayload.setStatus(faker.random().nextInt(2) == 0 ? "available" : "unavailable");
     }
 
-    @Test
+    @Test (priority = 1)
     public void testCreatePet() {
         Response response = PetService.createPet(petPayload);
-        response.then()
-                    .spec(responseSpec)
-                .log().all();
+        response.then().
+                spec(responseSpec).
+                log().all();
     }
+    @Test(priority = 2)
+    public void testGetPet() {
+        Response response = PetService.getPet(this.petPayload.getId());
+        response.then().
+                    spec(responseSpec).
+                    log().all();
 
-
+    }
+    @Test(priority = 3)
+    public void testUpdatePet() {
+        petPayload.setName(faker.name().name());
+        petPayload.setPhotoUrls(List.of(faker.internet().url()));
+        Response response = PetService.updatePet(this.petPayload.getId(), this.petPayload);
+        response.then().
+                spec(responseSpec).
+                log().all();
+    }
+    @Test(priority = 4)
+    public void testDeletePet() {
+        Response response = PetService.deletePet(this.petPayload.getId());
+        response.then().
+                spec(responseSpec).
+                log().all();
+    }
 }
