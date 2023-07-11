@@ -17,13 +17,13 @@ public class Pet {
 
     @Getter
     @Setter
-    private static class Category {
+    public static class Category {
         private int id;
         private String name;
     }
     @Getter
     @Setter
-    private static class Tag {
+    public static class Tag {
         private int id;
         private String name;
     }

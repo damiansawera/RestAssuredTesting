@@ -9,6 +9,8 @@ import io.restassured.specification.ResponseSpecification;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import java.util.List;
+
 import static io.restassured.RestAssured.expect;
 
 public class PetTests {
@@ -23,9 +25,19 @@ public class PetTests {
     public void setUp() {
     faker = new Faker();
     petPayload = new Pet();
+    Pet.Category category = new Pet.Category();
+    category.setId(faker.idNumber().hashCode());
+    category.setName(faker.name().name());
+    Pet.Tag tag = new Pet.Tag();
+    tag.setId(faker.idNumber().hashCode());
+    tag.setName(faker.name().name());
 
     petPayload.setId(faker.idNumber().hashCode());
-    //TODO: fill up pet object with fake data
+    petPayload.setCategory(category);
+    petPayload.setTags(List.of(tag));
+    petPayload.setName(faker.name().name());
+    petPayload.setPhotoUrls(List.of(faker.internet().url()));
+    petPayload.setStatus(faker.random().nextInt(2) == 0 ? "available" : "unavailable");
     }
 
     @Test
