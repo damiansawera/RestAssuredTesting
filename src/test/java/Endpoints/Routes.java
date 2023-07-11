@@ -13,4 +13,7 @@ public class Routes {
     // Pet endpoints
 
     public static final String POST_PET_ENDPOINT = "/pet";
+    public static final String GET_PET_ENDPOINT = "/pet/{petId}";
+    public static final String PUT_PET_ENDPOINT = "/pet";
+    public static final String DELETE_PET_ENDPOINT = "pet/{petId}";
 }
