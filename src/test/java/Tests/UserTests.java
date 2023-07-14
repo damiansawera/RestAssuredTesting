@@ -1,4 +1,4 @@
-package Test;
+package Tests;
 
 import Endpoints.UserService;
 import POJOclasses.User;
@@ -38,7 +38,6 @@ public class UserTests{
     @Test(priority = 1)
     public void testPostUser() {
        Response response = UserService.createUser(userPayload);
-        System.out.println(userPayload.getUsername() +"\n"+ userPayload.getPassword());
        response.
                then().spec(responseSpec);
     }
