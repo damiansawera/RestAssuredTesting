@@ -54,6 +54,7 @@ public class UserTests {
     }
 
     @Test(priority = 4, dataProvider = "Usernames", dataProviderClass = UserDataProviders.class)
+
     public void testDeleteUser(String username) {
 
         Response response = UserService.deleteUser(username);
