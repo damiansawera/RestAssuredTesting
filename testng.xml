@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Rest Assured Testing Suite">
+
+    <listeners>
+        <listener class-name="Utility.ExtentReportsManager"></listener>
+    </listeners>
+
+    <test name="userTests">
+        <classes>
+            <class name="Tests.UserTests"/>
+        </classes>
+    </test>
+
+    <test name="dataDrivenUserTests">
+        <classes>
+            <class name="DataDrivenTests.UserTests"/>
+        </classes>
+    </test>
+
+    <test name="PetTests">
+        <classes>
+            <class name="Tests.PetTests"/>
+        </classes>
+    </test>
+</suite> 
