@@ -25,7 +25,7 @@ public class ExtentReportsManager implements ITestListener {
         String timestamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());
         reportName = "Test-Report -"+timestamp+".html";
 
-        sparkReporter = new ExtentSparkReporter("Reports/"+ reportName);
+        sparkReporter = new ExtentSparkReporter("extent_reports/"+ reportName);
 
         sparkReporter.config().setDocumentTitle("Rest Assured Testing Report");
         sparkReporter.config().setReportName("Pet Store API Testing");
