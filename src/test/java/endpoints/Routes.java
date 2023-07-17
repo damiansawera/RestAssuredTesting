@@ -1,4 +1,4 @@
-package Endpoints;
+package endpoints;
 
 public class Routes {
     public static final String BASE_URI = "https://petstore.swagger.io/v2";

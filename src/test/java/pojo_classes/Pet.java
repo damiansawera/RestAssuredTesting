@@ -1,4 +1,4 @@
-package POJOclasses;
+package pojo_classes;
 
 import lombok.Getter;
 import lombok.Setter;

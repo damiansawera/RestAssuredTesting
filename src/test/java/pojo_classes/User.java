@@ -1,6 +1,5 @@
-package POJOclasses;
+package pojo_classes;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
 import lombok.Setter;
 

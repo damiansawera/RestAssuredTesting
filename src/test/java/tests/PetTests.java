@@ -1,7 +1,7 @@
-package Tests;
+package tests;
 
-import Endpoints.PetService;
-import POJOclasses.Pet;
+import endpoints.PetService;
+import pojo_classes.Pet;
 import com.github.javafaker.Faker;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
