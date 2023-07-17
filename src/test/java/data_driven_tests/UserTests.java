@@ -1,8 +1,8 @@
-package DataDrivenTests;
+package data_driven_tests;
 
-import Endpoints.UserService;
-import POJOclasses.User;
-import Utility.UserDataProviders;
+import endpoints.UserService;
+import pojo_classes.User;
+import utility.UserDataProviders;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.ResponseSpecification;

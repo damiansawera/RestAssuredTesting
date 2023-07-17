@@ -1,7 +1,7 @@
-package Tests;
+package tests;
 
-import Endpoints.UserService;
-import POJOclasses.User;
+import endpoints.UserService;
+import pojo_classes.User;
 import com.github.javafaker.Faker;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;

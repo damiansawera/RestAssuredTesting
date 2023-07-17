@@ -3,24 +3,24 @@
 <suite name="Rest Assured Testing Suite">
 
     <listeners>
-        <listener class-name="Utility.ExtentReportsManager"></listener>
+        <listener class-name="utility.ExtentReportsManager"></listener>
     </listeners>
 
     <test name="userTests">
         <classes>
-            <class name="Tests.UserTests"/>
+            <class name="tests.UserTests"/>
         </classes>
     </test>
 
     <test name="dataDrivenUserTests">
         <classes>
-            <class name="DataDrivenTests.UserTests"/>
+            <class name="data_driven_tests.UserTests"/>
         </classes>
     </test>
 
     <test name="PetTests">
         <classes>
-            <class name="Tests.PetTests"/>
+            <class name="tests.PetTests"/>
         </classes>
     </test>
 </suite> 

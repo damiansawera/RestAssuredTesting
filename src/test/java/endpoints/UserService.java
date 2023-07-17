@@ -1,6 +1,6 @@
-package Endpoints;
+package endpoints;
 
-import POJOclasses.User;
+import pojo_classes.User;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
