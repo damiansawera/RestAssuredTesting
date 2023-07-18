@@ -1,0 +1,81 @@
+15:25:09.249 [main] INFO  tests.UserTests - Creating user
+15:25:10.780 [main] INFO  tests.UserTests - User is created
+15:25:10.787 [main] INFO  tests.UserTests - Getting information about the user
+15:25:11.497 [main] INFO  tests.UserTests - Information Received
+15:25:11.499 [main] INFO  tests.UserTests - Updating user
+15:25:12.199 [main] INFO  tests.UserTests - User updated
+15:25:12.200 [main] INFO  tests.UserTests - Deleting user
+15:25:12.899 [main] INFO  tests.UserTests - User deleted
+15:25:12.900 [main] INFO  tests.UserTests - Trying to Log in
+15:25:13.603 [main] INFO  tests.UserTests - User Logged in
+15:26:37.043 [main] INFO  tests.UserTests - Creating user
+15:26:38.485 [main] INFO  tests.UserTests - User is created
+15:26:38.492 [main] INFO  tests.UserTests - Getting information about the user
+15:26:39.205 [main] INFO  tests.UserTests - Information Received
+15:26:39.206 [main] INFO  tests.UserTests - Updating user
+15:26:39.910 [main] INFO  tests.UserTests - User updated
+15:26:39.911 [main] INFO  tests.UserTests - Deleting user
+15:26:40.610 [main] INFO  tests.UserTests - User deleted
+15:26:40.611 [main] INFO  tests.UserTests - Trying to Log in
+15:26:41.305 [main] INFO  tests.UserTests - User Logged in
+15:28:42.567 [main] INFO  tests.UserTests - Creating user
+15:28:43.995 [main] INFO  tests.UserTests - User is created
+15:28:44.003 [main] INFO  tests.UserTests - Getting information about the user
+15:28:44.711 [main] INFO  tests.UserTests - Information Received
+15:28:44.712 [main] INFO  tests.UserTests - Updating user
+15:28:45.406 [main] INFO  tests.UserTests - User updated
+15:28:45.407 [main] INFO  tests.UserTests - Deleting user
+15:28:46.097 [main] INFO  tests.UserTests - User deleted
+15:28:46.098 [main] INFO  tests.UserTests - Trying to Log in
+15:28:46.794 [main] INFO  tests.UserTests - User Logged in
+15:29:30.912 [main] INFO  tests.UserTests - Creating user
+15:29:32.322 [main] INFO  tests.UserTests - User is created
+15:29:32.330 [main] INFO  tests.UserTests - Getting information about the user
+15:29:33.036 [main] INFO  tests.UserTests - Information Received
+15:29:33.036 [main] INFO  tests.UserTests - Updating user
+15:29:33.734 [main] INFO  tests.UserTests - User updated
+15:29:33.735 [main] INFO  tests.UserTests - Deleting user
+15:29:34.433 [main] INFO  tests.UserTests - User deleted
+15:29:34.434 [main] INFO  tests.UserTests - Trying to Log in
+15:29:35.127 [main] INFO  tests.UserTests - User Logged in
+16:58:32.132 [main] INFO  tests.UserTests - Creating user
+16:58:33.753 [main] INFO  tests.UserTests - User is created
+16:58:33.760 [main] INFO  tests.UserTests - Getting information about the user
+16:58:34.467 [main] INFO  tests.UserTests - Information Received
+16:58:34.468 [main] INFO  tests.UserTests - Updating user
+16:58:35.166 [main] INFO  tests.UserTests - User updated
+16:58:35.167 [main] INFO  tests.UserTests - Deleting user
+16:58:35.867 [main] INFO  tests.UserTests - User deleted
+16:58:35.868 [main] INFO  tests.UserTests - Trying to Log in
+16:58:36.563 [main] INFO  tests.UserTests - User Logged in
+16:59:36.806 [main] INFO  tests.UserTests - Creating user
+16:59:38.265 [main] INFO  tests.UserTests - User is created
+16:59:38.273 [main] INFO  tests.UserTests - Getting information about the user
+16:59:38.982 [main] INFO  tests.UserTests - Information Received
+16:59:38.983 [main] INFO  tests.UserTests - Updating user
+16:59:39.683 [main] INFO  tests.UserTests - User updated
+16:59:39.684 [main] INFO  tests.UserTests - Deleting user
+16:59:40.382 [main] INFO  tests.UserTests - User deleted
+16:59:40.383 [main] INFO  tests.UserTests - Trying to Log in
+16:59:41.085 [main] INFO  tests.UserTests - User Logged in
+17:00:40.348 [main] INFO  tests.UserTests - Creating user
+17:00:41.748 [main] INFO  tests.UserTests - User is created
+17:00:41.756 [main] INFO  tests.UserTests - Getting information about the user
+17:00:42.466 [main] INFO  tests.UserTests - Information Received
+17:00:42.467 [main] INFO  tests.UserTests - Updating user
+17:00:43.168 [main] INFO  tests.UserTests - User updated
+17:00:43.169 [main] INFO  tests.UserTests - Deleting user
+17:00:43.883 [main] INFO  tests.UserTests - User deleted
+17:00:43.884 [main] INFO  tests.UserTests - Trying to Log in
+17:00:44.587 [main] INFO  tests.UserTests - User Logged in
+17:03:21.751 [main] INFO  tests.UserTests - Creating user
+17:03:23.187 [main] INFO  tests.UserTests - User is created
+17:03:23.193 [main] INFO  tests.UserTests - Getting information about the user
+17:03:23.906 [main] INFO  tests.UserTests - Information Received
+17:03:23.907 [main] INFO  tests.UserTests - Updating user
+17:03:24.609 [main] INFO  tests.UserTests - User updated
+17:03:24.610 [main] INFO  tests.UserTests - Deleting user
+17:03:25.308 [main] INFO  tests.UserTests - User deleted
+17:03:25.308 [main] INFO  tests.UserTests - Trying to Log in
+17:03:26.008 [main] INFO  tests.UserTests - User Logged in
+17:04:43.537 [main] INFO  tests.UserTests - Creating user
