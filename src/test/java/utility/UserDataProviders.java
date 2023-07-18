@@ -29,7 +29,7 @@ public class UserDataProviders {
 
     public Object[][] getDataByColumnIndex(String sheetName, int columnIndex) throws IOException {
 
-        String path = "TestData/UserTestData.xlsx";
+        String path = "test_data/UserTestData.xlsx";
         XlsxHelper xlsxHelper = new XlsxHelper(path);
 
         int rowNum = xlsxHelper.getRowCount(sheetName);
